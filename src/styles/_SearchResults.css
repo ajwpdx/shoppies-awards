@@ -20,5 +20,14 @@
 .search-area input{
     width: 90%;
     max-width: 400px;
+    
+}
+
+.search-area input:focus{
+   
+}
+
+.search-area input::before{
+   content: "&#x1F50E"
 }
 

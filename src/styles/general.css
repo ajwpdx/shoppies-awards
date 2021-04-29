@@ -26,6 +26,10 @@ input{
     font-size: 1.8rem;
 }
 
+input:focus{
+    outline:none;
+}
+
 .logo-the{
     font-size: 2.5rem;
     margin-bottom: -1.5rem;
