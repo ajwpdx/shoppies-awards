@@ -11,3 +11,5 @@
 
 /* component stylesheets */
 @import './_TitleHeader';
+@import './_SearchResults.css';
+@import './_Nominations.css';

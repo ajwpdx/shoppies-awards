@@ -1,13 +1,17 @@
 import React from 'react'
-import TitleHeader from './components/TitleHeader';
+
+//components
+import Nominations from './layouts/Nominations';
+import SearchResults from './layouts/SearchResults';
+import TitleHeader from './layouts/TitleHeader';
 
 function App() {
   return (
     <div className="App">
       <TitleHeader/>
-      <header className="App-header">
+      <Nominations/>
+      <SearchResults/>
 
-      </header>
     </div>
   );
 }

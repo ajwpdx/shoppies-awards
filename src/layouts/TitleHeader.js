@@ -1,12 +1,11 @@
 import React from 'react'
+import Logo from '../components/Logo'
 
 const TitleHeader = (props) => {
 
     return (
         <header>
-            <h1>
-                The Shoppies
-            </h1>
+            <Logo/>
             <h3>
                 Movie awards for entrepreneurs
             </h3>

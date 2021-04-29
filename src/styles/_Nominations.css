@@ -1,0 +1,10 @@
+#nominations{
+    height: 200px;
+    width: 90%;
+    max-width: 1000px;
+    /* border: 1px solid black; */
+    box-shadow: var(--box-shadow-main);
+    background-color: white;
+    border-radius: 5px;
+    margin: 30px auto;
+}
