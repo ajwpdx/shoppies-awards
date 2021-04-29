@@ -1,0 +1,13 @@
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap');
+
+
+/* universal stylesheets */
+@import './reset.css';
+@import './variables.css';
+@import './general.css';
+
+
+/* component stylesheets */
+@import './_TitleHeader';

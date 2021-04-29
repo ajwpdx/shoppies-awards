@@ -1,0 +1,22 @@
+body{
+background-color: #E85D5A;
+font-family: var(--font-content)
+}
+
+h1{
+    font-family: var(--font-title);
+    color: #76FBE3;
+    font-size: 5rem;
+    font-weight: bold;
+
+}
+
+h2{
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+}
+
+h3{
+    font-family: var(--font-content);
+    font-size: 2rem;
+}
