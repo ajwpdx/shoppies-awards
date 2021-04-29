@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
+
 
 const SearchResults = (props) => {
+
+    const [nominations, setNominations] = useState([])
+    const []
 
     return (
         <section id="search">
@@ -12,7 +17,7 @@ const SearchResults = (props) => {
                     />
                 </form>
                 <div className='movies-list'>
-                    
+
                 </div>
             </div>
         </section>
