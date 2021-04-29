@@ -4,11 +4,17 @@ const SearchResults = (props) => {
 
     return (
         <section id="search">
-            <form>
-                <input
-                    placeholder='Search Movie'
-                />
-            </form>
+            <h2 className='section-title'>Search Movies</h2>
+            <div className='search-area'>
+                <form className='search-form'>
+                    <input
+                        placeholder='Movie Title'
+                    />
+                </form>
+                <div className='movies-list'>
+                    
+                </div>
+            </div>
         </section>
     )
 }

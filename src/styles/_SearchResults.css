@@ -1,8 +1,24 @@
 
 
 #search {
+
+    box-shadow: var(--box-shadow-main);
+    background-color: white;
+    height: 500px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.search-area{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 20px;
 }
+
+.search-area input{
+    width: 90%;
+    max-width: 400px;
+}
+
