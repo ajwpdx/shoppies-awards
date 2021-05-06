@@ -15,7 +15,7 @@ const SearchResults = (props) => {
 
     const onSearchSubmit = (evt) => {
         evt.preventDefault()
-        axios.get(`http://www.omdbapi.com/?apikey=66b9867&s=${searchText}`)
+        axios.get(`https://www.omdbapi.com/?apikey=66b9867&s=${searchText}`)
         .then(res=> {
             if (res.data.Search !== undefined){
                 setSearchList(res.data.Search)
