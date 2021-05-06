@@ -6,7 +6,7 @@ import MovieSearch from '../components/MovieSearch'
 const SearchResults = (props) => {
     const [searchText, setSearchText] = useState("")
     const [searchList, setSearchList] = useState([])
-    const [loading, isLoading] = useState(false)
+    // const [loading, isLoading] = useState(false)
     const [errorMsg, setErrorMsg] = useState("")
 
     const onSearchTextChange = (evt) =>{
@@ -15,10 +15,8 @@ const SearchResults = (props) => {
 
     const onSearchSubmit = (evt) => {
         evt.preventDefault()
-        isLoading(true)
         axios.get(`http://www.omdbapi.com/?apikey=66b9867&s=${searchText}`)
         .then(res=> {
-            isLoading(true)
             if (res.data.Search !== undefined){
                 setSearchList(res.data.Search)
                 setErrorMsg("")
@@ -26,13 +24,10 @@ const SearchResults = (props) => {
                 setErrorMsg("That search term is either too short or there is no movie that has it in its title. Try another word.")
                 setSearchList([])
             }
-            
-            console.log(res.data.Search)
-            isLoading(false)
         }
             )
         .catch(err => console.log("error ->", err))
-        isLoading(false)
+
 
     }
 
