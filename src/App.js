@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useContext} from 'react'
 
 //components
 import Nominations from './layouts/Nominations';
@@ -7,12 +7,18 @@ import TitleHeader from './layouts/TitleHeader';
 
 function App() {
   const [nominations, setNominations] = useState([])
+  const [removedMovieId, setRemovedMovieId] = useState()
+
+  const enableBtnContext = (movieId) => {
+    setRemovedMovieId(movieId) 
+  }
+
 
   return (
     <div className="App">
       <TitleHeader/>
-      <Nominations nominations={nominations} setNominations={setNominations}/>
-      <SearchResults setNominations={setNominations} nominations={nominations}/>
+      <Nominations nominations={nominations} setNominations={setNominations} enableBtnContext={enableBtnContext}/>
+      <SearchResults setNominations={setNominations} nominations={nominations} removedMovieId={removedMovieId} />
 
     </div>
   );

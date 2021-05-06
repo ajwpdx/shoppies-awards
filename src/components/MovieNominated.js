@@ -2,15 +2,15 @@ import React from 'react'
 
 const MovieNominated = (props) => {
 
-
-
     const removeMovie = (evt) => {
         evt.preventDefault()
         const imdbID = props.movie.imdbID
+        props.enableBtnContext(imdbID)
         props.setNominations(props.nominations.filter(movie => movie.imdbID !== imdbID))
-
         
     }
+
+    
 
 return (
     <div className='movie'>

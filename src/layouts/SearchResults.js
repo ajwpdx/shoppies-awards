@@ -24,6 +24,7 @@ const SearchResults = (props) => {
                 setErrorMsg("")
             } else{
                 setErrorMsg("That search term is either too short or there is no movie that has it in its title. Try another word.")
+                setSearchList([])
             }
             
             console.log(res.data.Search)
@@ -52,7 +53,7 @@ const SearchResults = (props) => {
                 <div className='movies-list'>
                     <div className={errorMsg === "" ? "hidden" : 'error-msg'}><h3>{errorMsg}</h3></div>
                 {searchList.map(movie => { 
-                return (<MovieSearch movie={movie} key={movie.imdbID} setNominations={props.setNominations} nominations={props.nominations}/>)})}
+                return (<MovieSearch movie={movie} key={movie.imdbID} setNominations={props.setNominations} nominations={props.nominations} removedMovieId={props.removedMovieId}/>)})}
                 </div>
             </div>
         </section>

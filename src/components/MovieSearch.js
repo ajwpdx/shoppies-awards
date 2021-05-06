@@ -9,15 +9,21 @@ const MovieSearch = (props) => {
             if (nominatedMovie.imdbID === props.movie.imdbID){
                 setdisableBtn(true)
             }
+
         })
-    },[])
+    }, [props.nominations, props.movie])
+
+    useEffect(() => {
+        if(props.movie.imdbID === props.removedMovieId){
+            setdisableBtn(false)
+        }
+    }, [props.removedMovieId, props.movie])
 
     const nominateMovie = (evt) =>{
         evt.preventDefault()
-        console.log(props.movie)
         props.setNominations([props.movie, ...props.nominations])
-        setdisableBtn(true)
     }
+
 return (
     <div className='movie'>
         <img src={props.movie.Poster} alt='movie poster'/>
