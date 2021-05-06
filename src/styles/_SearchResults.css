@@ -4,10 +4,9 @@
 
     box-shadow: var(--box-shadow-main);
     background-color: white;
-    height: 500px;
     width: 90%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 30px auto;
 
 }
 
@@ -15,19 +14,44 @@
     display: flex;
     flex-direction: column;
     margin: 20px;
+    align-items: center;
 }
 
+.search-area form{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
 .search-area input{
     width: 90%;
     max-width: 400px;
+    margin: 0 5px;
     
 }
 
-.search-area input:focus{
-   
+.movies-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.search-area input::before{
-   content: "&#x1F50E"
+.movie{
+    width: 150px;
+    margin: 10px;
 }
 
+.error-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}

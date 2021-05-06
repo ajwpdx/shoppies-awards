@@ -1,8 +1,60 @@
 #nominations{
-    height: 200px;
     width: 90%;
     max-width: 1000px;
     box-shadow: var(--box-shadow-main);
     background-color: white;
     margin: 30px auto;
+}
+
+.nominated-movies-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie{
+    width: 150px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.movie img{
+    padding-bottom: 5px;
+}
+
+.hidden{
+    display: none;
+
+}
+
+.nominations-banner{
+    padding: 15px 0;
+    background-color: black;
+    color: greenyellow;
+    text-align: center;
+}
+
+.nominations-full{
+    background-color: greenyellow;
+}
+
+.blank-announcement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+
 }

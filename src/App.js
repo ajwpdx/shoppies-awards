@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <TitleHeader/>
-      <Nominations/>
-      <SearchResults/>
+      <Nominations nominations={nominations} setNominations={setNominations}/>
+      <SearchResults setNominations={setNominations} nominations={nominations}/>
 
     </div>
   );

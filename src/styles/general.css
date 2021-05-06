@@ -19,6 +19,12 @@ h2{
 h3{
     font-family: var(--font-content);
     font-size: 2rem;
+    padding-bottom: 5px;
+}
+
+p{
+    font-size: 1.5rem;
+    padding-bottom: 5px;
 }
 
 input{
@@ -29,6 +35,17 @@ input{
 input:focus{
     outline:none;
 }
+
+button{
+    padding: .5rem;
+    font-size: 1.8rem;
+}
+
+button:disabled {
+    background: #999;
+    color: #555;
+    cursor: not-allowed;
+  }
 
 .logo-the{
     font-size: 2.5rem;
